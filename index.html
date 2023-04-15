@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <title>Songbird Quiz</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a
+                class="header__menu-link header__menu-link_active"
+                href="index.html"
+                >Главная</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="game.html">Игра</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="gallery.html">Галерея</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="logo header__logo" href="index.html">
+          <h1 class="logo__text">Songbird</h1>
+        </a>
+        <div class="burger">
+          <img src="./assets/images/menu-icon.svg" class="" alt="" />
+        </div>
+        <div class="header__btns-lang">
+          <span
+            class="header__btn-lang header__btn-lang_active header__lang-russian"
+            >Ru</span
+          >
+          <span class="header__btn-lang header__lang-english">En</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="intro">
+        <h2 class="intro__title h2-title">Игра Songbird</h2>
+        <p class="intro__text">Правила игры:</p>
+
+        <ul class="intro__list">
+          <li class="intro__list-item">1. Прослушиваете звук</li>
+          <li class="intro__list-item">
+            2. Пробуете угадать какой птице принадлежит звук
+          </li>
+          <li class="intro__list-item">
+            3. При угадывании с первого раза получаете 5 очков. При каждой
+            ошибке из общего количества очков снимается один балл
+          </li>
+          <li class="intro__list-item">
+            4. При угадывании можно перейти к следующему вопросу
+          </li>
+          <li class="intro__list-item">
+            5. В конце игры можете узнать результаты
+          </li>
+        </ul>
+
+        <div class="btn intro__btn">
+          <a href="game.html"></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__box">
+        <a class="footer__logo" target="_blank" href="https://rs.school/js/">
+          <img
+            class="footer__logo-img"
+            src="assets/images/rs_school_js.svg"
+            alt=""
+          />
+        </a>
+        <p class="footer__text"></p>
+      </div>
+    </footer>
+
+    <script type="module" defer src="assets/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Songbird Quiz</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="index.html">Главная</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="game.html">Игра</a>
+            </li>
+            <li class="header__menu-item">
+              <a
+                class="header__menu-link header__menu-link_active"
+                href="gallery.html"
+                >Галерея</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a class="logo header__logo" href="index.html">
+          <h1 class="logo__text">Songbird</h1>
+        </a>
+        <div class="burger">
+          <img src="./assets/images/menu-icon.svg" class="" alt="" />
+        </div>
+        <div class="header__btns-lang">
+          <span
+            class="header__btn-lang header__btn-lang_active header__lang-russian"
+            >Ru
+          </span>
+          <span class="header__btn-lang header__lang-english">En </span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main main-result">
+      <section class="result">
+        <div class="result__box">
+          <h2 class="result__title"></h2>
+          <p class="result__text">
+            <span class="result__text-part-1"></span>
+            <span class="result__score"></span>
+            <span class="result__text-part-2"></span>
+          </p>
+          <div class="btn result__btn">
+            <a href="game.html"></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__box">
+        <a class="footer__logo" target="_blank" href="https://rs.school/js/">
+          <img
+            class="footer__logo-img"
+            src="assets/images/rs_school_js.svg"
+            alt=""
+          />
+        </a>
+        <p class="footer__text"></p>
+      </div>
+    </footer>
+
+    <script type="module" defer src="assets/js/index.js"></script>
+  </body>
+</html>

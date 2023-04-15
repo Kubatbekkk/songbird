@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Songbird Quiz</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="index.html">Главная</a>
+            </li>
+            <li class="header__menu-item">
+              <a
+                class="header__menu-link header__menu-link_active"
+                href="game.html"
+                >Игра</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="gallery.html">Галерея</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="logo header__logo" href="index.html">
+          <h1 class="logo__text">Songbird</h1>
+        </a>
+        <div class="burger">
+          <img src="./assets/images/menu-icon.svg" class="" alt="" />
+        </div>
+        <div class="header__btns-lang">
+          <span
+            class="header__btn-lang header__btn-lang_active header__lang-russian"
+            >Ru
+          </span>
+          <span class="header__btn-lang header__lang-english">En </span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="game">
+        <div class="game__wrapper-score">
+          <p class="game__score"></p>
+          <p class="game__score-num">0</p>
+        </div>
+        <ul class="game__pagination">
+          <li class="game__pagination-item game__pagination-item_active"></li>
+          <li class="game__pagination-item"></li>
+          <li class="game__pagination-item"></li>
+          <li class="game__pagination-item"></li>
+          <li class="game__pagination-item"></li>
+          <li class="game__pagination-item"></li>
+        </ul>
+        <div class="game__current-animal">
+          <img
+            class="game__current-animal-img"
+            src="assets/images/bird-sihlouette.png"
+            alt="secret bird"
+          />
+          <div class="game__current-animal-description">
+            <h3 class="game__current-animal-title">******</h3>
+            <div class="game__current-animal-audio audio">
+              <div class="row audio__control">
+                <button class="audio__btn-play">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </button>
+                <div class="audio__wrapper-strip">
+                  <input
+                    class="audio__strip strip strip-music"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="0"
+                    id="duration_slider"
+                  />
+                  <div class="row">
+                    <p class="audio__time">00:00</p>
+                    <p class="audio__time audio__all-time">01:35</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="audio__box-volume">
+                <p class="audio__value">70</p>
+                <i
+                  class="fa fa-volume-up"
+                  aria-hidden="true"
+                  id="volume_icon"
+                ></i>
+                <input
+                  class="strip strip-volume"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="90"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="game__box">
+          <ul class="game__list">
+            <li class="game__item" date-item="0"></li>
+            <li class="game__item" date-item="1"></li>
+            <li class="game__item" date-item="2"></li>
+            <li class="game__item" date-item="3"></li>
+            <li class="game__item" date-item="4"></li>
+            <li class="game__item" date-item="5"></li>
+          </ul>
+          <div class="instruction instruction_active">
+            <p class="instruction__text">
+              <br />
+            </p>
+          </div>
+          <div class="description-animal">
+            <div class="description-animal__top">
+              <img
+                src="https://live.staticflickr.com//65535//49298804222_474cfe8682.jpg"
+                alt=""
+                class="description-animal__img"
+              />
+              <div class="description-animal__description">
+                <h3 class="description-animal__title"></h3>
+                <p class="description-animal__kind"></p>
+                <div class="description-animal__audio audio">
+                  <div class="row audio__control">
+                    <button class="audio__btn-play">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                    </button>
+                    <div class="audio__wrapper-strip">
+                      <input
+                        class="audio__strip strip strip-music"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        id="duration_slider"
+                      />
+                      <div class="row">
+                        <p class="audio__time"></p>
+                        <p class="audio__time audio__all-time"></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="audio__box-volume">
+                    <p class="audio__value">90</p>
+                    <i
+                      class="fa fa-volume-up"
+                      aria-hidden="true"
+                      id="volume_icon"
+                    ></i>
+                    <input
+                      class="strip strip-volume"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="90"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="description-animal__text"></p>
+          </div>
+        </div>
+        <div class="btn game__btn">
+          <button href="game.html"></button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__box">
+        <a class="footer__logo" target="_blank" href="https://rs.school/js/">
+          <img
+            class="footer__logo-img"
+            src="assets/images/rs_school_js.svg"
+            alt=""
+          />
+        </a>
+        <p class="footer__text"></p>
+      </div>
+    </footer>
+
+    <script defer src="assets/js/index.js"></script>
+  </body>
+</html>
